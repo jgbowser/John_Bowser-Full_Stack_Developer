@@ -1,8 +1,15 @@
+import Hero from '../Hero/Hero'
 import './App.css';
 
 function App() {
   return (
-    <h1>Hello World</h1>
+    <div className='App'>
+      <header></header>
+      <main>
+        <Hero />
+      </main>
+
+    </div>
   )
 }
 
