@@ -6,15 +6,15 @@ const Hero = () => {
   const fromTop = useSpring({
     transform: 'translate3d(0%,0,0)',
     opacity: 1,
-    from: { transform: 'translate3d(0,-100%,0)', opacity: 0},
     delay: 500,
+    from: { transform: 'translate3d(0,-100%,0)', opacity: 0},
     config: { duration: 300 }
   })
   const fromBottom = useSpring({
     transform: 'translate3d(0%,0,0)',
     opacity: 1,
-    from: { transform: 'translate3d(0,100%,0)', opacity: 0},
     delay: 800,
+    from: { transform: 'translate3d(0,100%,0)', opacity: 0},
     config: { duration: 300 }
 
   })
