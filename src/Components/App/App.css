@@ -2,3 +2,18 @@ header {
   height: 10vh;
   background-color: white;
 }
+
+section {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.headerWrapper {
+  width: 100%;
+  background-color: white;
+}
+
+.aboutWrapper {
+  width: 100%;
+  background-color: black;
+}
