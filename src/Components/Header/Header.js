@@ -1,37 +1,21 @@
-import { useSpring, useChain, animated } from 'react-spring'
-import { useRef } from 'react'
+import { useSpring, animated } from 'react-spring'
 import './Header.css'
 
 const Header = () => {
 
-  const logo = [
-    {
-      id: 1,
-      text: 'J'
-    },
-    {
-      id: 2,
-      text: 'G'
-    },
-    {
-      id: 3,
-      text: 'B'
-    }
-  ]
-
   const fadeIn = useSpring({
     opacity: 1,
     from: { opacity: 0},
-    delay: 900,
+    delay: 1100,
   })
   const fadeLogo = useSpring({ 
     opacity: 1,
-    delay: 1100, 
+    delay: 1300, 
     from: { opacity: 0},
   })
   const fadeNav = useSpring({
     opacity: 1,
-    delay: 1300,
+    delay: 1500,
     from: { opacity: 0 }
   })
 

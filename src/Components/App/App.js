@@ -4,7 +4,7 @@ import { useSpring, animated } from 'react-spring'
 import './App.css';
 
 function App() {
-  const fadeIn = useSpring({ opacity: 1, from: { opacity: 0 }, delay: 275, config: {duration: 250}})
+  const fadeIn = useSpring({ opacity: 1, from: { opacity: 0 }, delay: 900, config: {duration: 250}})
   return (
     <div className='App'>
       <animated.header style={fadeIn}>
