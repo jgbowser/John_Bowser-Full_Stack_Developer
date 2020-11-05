@@ -5,13 +5,13 @@
   align-items: center;
   height: 100%;
   margin: 0 auto;
-  background-color: rgb(116, 116, 116);
+  background-color: white;
   max-width: 1440px;
 }
 
 .Header__title {
   margin-left: 2rem;
-  color: white;
+  color: black;
   font-size: 2rem;
 }
 
@@ -41,7 +41,7 @@
 .Header__links ul li a {
   font-family: 'Caveat';
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 1.2rem;
   margin: 0;
 }
