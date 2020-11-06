@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
   padding: 0;
 }
 
@@ -25,6 +25,7 @@
   text-align: center;
   color: black;
   line-height: 1.5;
+  letter-spacing: 2px;
 }
 
 .Hero__title {

@@ -39,15 +39,19 @@
 }
 
 .Header__links ul li a {
+  display: flex;
+  align-items: center;
   font-family: 'Caveat';
   text-decoration: none;
   color: black;
   font-size: 1.2rem;
   margin: 0;
+  height: 100%;
+  cursor: pointer;
 }
 
-.Header__links ul li:hover {
-  border-bottom: 5px solid rgb(0, 0, 0);
+.active {
+  border-bottom: 5px solid rgb(85, 85, 85);
   margin-top: 5px;
 }
 

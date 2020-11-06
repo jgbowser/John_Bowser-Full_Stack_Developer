@@ -1,6 +1,7 @@
 import Hero from '../Hero/Hero'
 import Header from '../Header/Header'
 import About from '../About/About'
+import { Element } from 'react-scroll'
 import './App.css';
 
 function App() {
@@ -14,7 +15,9 @@ function App() {
           <Hero />
         </div>
         <div className='aboutWrapper'>
-          <About />
+          <Element name='about'>
+            <About />
+          </Element>
         </div>
       </main>
 

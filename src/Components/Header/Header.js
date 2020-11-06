@@ -1,4 +1,5 @@
 import { useSpring, animated } from 'react-spring'
+import { Link } from 'react-scroll'
 import './Header.css'
 
 const Header = () => {
@@ -22,17 +23,25 @@ const Header = () => {
   return (
     <animated.div className='Header__container' style={fadeIn}>
       <div className='Header__title'>
-        <p>
-          <animated.span className='Header__logo' style={fadeLogo}>J</animated.span>
-          <animated.span className='Header__logo' style={fadeLogo}>G</animated.span>
-          <animated.span className='Header__logo' style={fadeLogo}>B</animated.span>
-        </p>
+        <animated.p className='Header__logo' style={fadeLogo}>
+          JGB
+        </animated.p>
       </div>
       <nav className='Header__links'>
         <ul>
-          <animated.li style={fadeNav}><a href='#about'>About</a></animated.li>
-          <animated.li style={fadeNav}><a href='#projects'>Projects</a></animated.li>
-          <animated.li style={fadeNav}><a href='#contact'>Contact</a></animated.li>
+          <animated.li style={fadeNav}>
+            <Link 
+              to='about'
+              activeClass='active'
+              spy={true}
+              smooth={true}
+              duration={500}
+              >
+              About
+            </Link>
+          </animated.li>
+          <animated.li style={fadeNav}><Link to='projects'>Projects</Link></animated.li>
+          <animated.li style={fadeNav}><Link to='contact'>Contact</Link></animated.li>
         </ul>
       </nav>
     </animated.div>
