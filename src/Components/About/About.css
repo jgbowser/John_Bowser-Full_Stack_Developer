@@ -1,4 +1,12 @@
 .About {
-  height: 100vh;
+  min-height: 100vh;
   background-color: black;
+  padding: 10vh 2rem 2rem 2rem;
+}
+
+.About__header {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem;
 }

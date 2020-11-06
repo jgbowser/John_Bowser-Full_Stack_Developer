@@ -1,0 +1,18 @@
+.AboutContentRow {
+  background-color: rgb(46, 46, 46);
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.row_image_container {
+  width: 100%;
+}
+
+.row_image {
+  display: block;
+  width: 90%;
+  max-width: 512px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
