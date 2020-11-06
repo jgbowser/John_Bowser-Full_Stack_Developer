@@ -5,10 +5,9 @@ import './AboutContentRow.css'
 const AboutContentRow = ({ content, img, imgAltText, animatedDirection }) => {
   
   return (
-    <VisibilitySensor>
+    <VisibilitySensor partialVisibility offset={{bottom: 200}}>
       {({ isVisible }) => (
         <Spring
-          delay={300}
           to={{
             opacity: isVisible ? 1 : 0,
             transform: isVisible
