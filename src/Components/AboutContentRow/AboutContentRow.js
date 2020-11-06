@@ -2,7 +2,7 @@ import { Spring } from 'react-spring/renderprops'
 import VisibilitySensor from 'react-visibility-sensor'
 import './AboutContentRow.css'
 
-const AboutContentRow = ({ content, img, imgAltText, animatedDirection }) => {
+const AboutContentRow = ({ content, img, imgAltText, animatedDirection, flexDirection }) => {
   
   return (
     <VisibilitySensor partialVisibility offset={{bottom: 200}}>
@@ -16,12 +16,12 @@ const AboutContentRow = ({ content, img, imgAltText, animatedDirection }) => {
           }}  
         >
           {(props) => (
-          <div className='AboutContentRow' style={{...props}}>
+          <div className={`AboutContentRow ${flexDirection}`} style={{...props}}>
           {img && <div className='row_image_container'>
               <img className='row_image' src={img} alt={imgAltText} />
             </div>}
           <div className='row_content'>
-            <p>{content}</p>
+            {content.map((line, i) => <p key={i} className='row_text'>{line}</p>)}
           </div>
         </div>
           )}
