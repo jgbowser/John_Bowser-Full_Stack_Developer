@@ -1,6 +1,9 @@
 import profileImg from '../images/profile_512.jpg'
 import topShot from '../images/topshot_512.jpg'
 import marathon from '../images/marathon_512.jpg'
+import discCaddy1 from '../images/disc_caddy/disc_caddy_1.jpg'
+import discCaddy2 from '../images/disc_caddy/disc_caddy_2.jpg'
+import discCaddy3 from '../images/disc_caddy/disc_caddy_3.jpg'
 
 
 export const aboutData = [
@@ -35,5 +38,30 @@ export const aboutData = [
       animatedDirection: 'right',
     },
   ]
+
+  export const projectData = {
+    discCaddy: {
+      images: [
+        { id: 1, url: discCaddy1 },
+        { id: 2, url: discCaddy2 },
+        { id: 3, url: discCaddy3 },
+      ],
+      content: {
+        title: 'DiscCaddy',
+        desc: 'Disc Golf app',
+        stack: {
+          client: 'JavaScript, React, React Router, Context, Jest',
+          server: 'Node.js, Express.js, PostgreSQL'
+        },
+        links: {
+          client: '',
+          server: '',
+          live: ''
+        }
+      }
+    },
+    spanish: {},
+    zipPal: {}
+  }
 
 
