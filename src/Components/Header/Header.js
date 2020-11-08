@@ -40,7 +40,17 @@ const Header = () => {
               About
             </Link>
           </animated.li>
-          <animated.li style={fadeNav}><Link to='projects'>Projects</Link></animated.li>
+          <animated.li style={fadeNav}>
+            <Link 
+              to='projects'
+              activeClass='active'
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              Projects
+            </Link>
+          </animated.li>
           <animated.li style={fadeNav}><Link to='contact'>Contact</Link></animated.li>
         </ul>
       </nav>

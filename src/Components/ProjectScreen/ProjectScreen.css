@@ -1,0 +1,76 @@
+.ProjectScreen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(46, 46, 46);
+}
+
+.ProjectScreen__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 63%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 0 .5rem;
+}
+
+.ProjectScreen__icon {
+  display: block;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+}
+
+.ProjectScreen__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  color: white;
+  font-size: 0.75rem;
+  padding: calc(95vh * 0.37) 1rem 1rem 1rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.content__desc_container {
+  padding-bottom: 0.75rem;
+}
+
+.content__links_container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: .75rem;
+}
+
+.content__title {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.content__links {
+  color: white;
+  font-weight: 600;
+}
+
+.content__stack p:last-child {
+  padding-top: 0.5rem;
+}
+
+.content__stack_header {
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.content__stack_list_title {
+  font-weight: 600;
+}
