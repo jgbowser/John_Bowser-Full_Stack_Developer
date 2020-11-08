@@ -3,9 +3,10 @@ import { projectData } from '../../data/profileData'
 import './ProjectSlider.css'
 
 const ProjectSlider = () => {
+
+  const projectComponents = projectData.map(project => <ProjectScreen key={project.id} images={project.images} content={project.content} />)
   return (
     <div className='ProjectSlider'>
-      <ProjectScreen images={projectData.discCaddy.images} content={projectData.discCaddy.content} />
     </div>
   )
 }

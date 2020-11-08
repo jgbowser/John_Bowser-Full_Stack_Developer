@@ -4,6 +4,12 @@ import marathon from '../images/marathon_512.jpg'
 import discCaddy1 from '../images/disc_caddy/disc_caddy_1.jpg'
 import discCaddy2 from '../images/disc_caddy/disc_caddy_2.jpg'
 import discCaddy3 from '../images/disc_caddy/disc_caddy_3.jpg'
+import spanish1 from '../images/spanish_srs/sr_1.jpg'
+import spanish2 from '../images/spanish_srs/sr_2.jpg'
+import spanish3 from '../images/spanish_srs/sr_3.jpg'
+import zippal1 from '../images/zip_pal/zip_pal_1.jpg'
+import zippal2 from '../images/zip_pal/zip_pal_2.jpg'
+import zippal3 from '../images/zip_pal/zip_pal_3.jpg'
 
 
 export const aboutData = [
@@ -39,8 +45,9 @@ export const aboutData = [
     },
   ]
 
-  export const projectData = {
-    discCaddy: {
+  export const projectData = [
+    {
+      id: 1,
       images: [
         { id: 1, url: discCaddy1 },
         { id: 2, url: discCaddy2 },
@@ -51,7 +58,7 @@ export const aboutData = [
         desc: 'DiscCaddy is built to be your companion on the course. With DiscCaddy you can: keep track of your round by creating a scorecard, add the discs you own to your DiscCaddy bag, and get a recommended disc based on your selected shot type and the discs you own. DiscCaddy helps you think about shot shapes and disc flight characteristics. It also allows you to view all your previous scorecards to track your scores over time.',
         stack: {
           client: 'JavaScript, React, React Router, Context, Jest',
-          server: 'Node.js, Express.js, PostgreSQL'
+          server: 'Node.js, Express.js, bcryptjs, PostgreSQL, Mocha, Chai'
         },
         links: {
           client: 'https://github.com/jgbowser/DiscCaddy-client',
@@ -60,8 +67,48 @@ export const aboutData = [
         }
       }
     },
-    spanish: {},
-    zipPal: {}
-  }
+    {
+      id: 2,
+      images: [
+        { id: 1, url: spanish1 },
+        { id: 2, url: spanish2 },
+        { id: 3, url: spanish3 },
+      ],
+      content: {
+        title: 'Spanish SRS',
+        desc: 'Spanish SRS is a language learning app that utilizes the spaced repetition technique to provide an optimized learning experience for the user. The app uses a linked list on the back end to handle reorganizing the list of words based on correct or incorrect guesses. Users are able to see an overall score as well as correct and incorrect guesses for each word. The back end is designed to scale, making the addition of new words and even languages very simple.',
+        stack: {
+          client: 'JavaScript, React, React Router, Context, Cypress',
+          server: 'Node.js, Express.js, bcryptjs, PostgreSQL, Mocha, Chai'
+        },
+        links: {
+          client: 'https://github.com/jgbowser/SR-Client-johnb-tiff',
+          server: 'https://github.com/jgbowser/SR-API-johnb-tiff',
+          live: 'https://language-spaced-repetition.vercel.app/register',
+        }
+      }
+    },
+    {
+      id: 3,
+      images: [
+        { id: 1, url: zippal1 },
+        { id: 2, url: zippal2 },
+        { id: 3, url: zippal3 },
+      ],
+      content: {
+        title: 'Zip Pal',
+        desc: 'Zip Pal is a pen pal app developed to help users escape the isolation of quarantine during the COVID-19 pandemic. The app aims to replicate a real pen pal experience. To do so, there is a 6 hour delay before a message can be read once sent, users take turns sending messages, and users are given random pen pals and can decide to initiate a conversation based on a brief bio. The goal of the constraints is to reduce the pressure of immediate responses and to promote long form, thoughtful messages.',
+        stack: {
+          client: 'JavaScript, React, React Router, Context, Jest, Enzyme',
+          server: 'Node.js, Express.js, bcryptjs, xss, PostgreSQL, Mocha, Chai'
+        },
+        links: {
+          client: 'https://github.com/jgbowser/zippal-client',
+          server: 'https://github.com/jgbowser/zippal-api',
+          live: 'https://zippals.vercel.app/',
+        }
+      }
+    ,}
+  ]
 
 
