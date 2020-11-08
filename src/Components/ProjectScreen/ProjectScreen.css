@@ -32,5 +32,40 @@
 .ProjectScreen__content {
   color: white;
   font-size: 0.75rem;
-  padding-top: calc(95vh * 0.37);
+  padding: calc(95vh * 0.37) 0.8rem 0.8rem 0.8rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.content__desc_container {
+  padding-bottom: 0.75rem;
+}
+
+.content__links_container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: .75rem;
+}
+
+.content__title {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.content__links {
+  color: white;
+  font-weight: 600;
+}
+
+.content__stack p:last-child {
+  padding-top: 0.5rem;
+}
+
+.content__stack_header {
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.content__stack_list_title {
+  font-weight: 600;
 }

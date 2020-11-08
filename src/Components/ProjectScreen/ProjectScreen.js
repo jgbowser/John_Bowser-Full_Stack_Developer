@@ -46,7 +46,20 @@ const ProjectScreen = ({ images, content }) => {
         </animated.div>
       ))}
       <div className='ProjectScreen__content'>
-        <h4>{content.title}</h4>
+        <h4 className='content__title'>{content.title}</h4>
+        <div className='content__links_container'>
+          <a className='content__links' href={content.links.live} target='_blank' rel='noreferrer'>Live App</a>
+          <a className='content__links' href={content.links.client} target='_blank' rel='noreferrer'>Client Repo</a>
+          <a className='content__links' href={content.links.server} target='_blank' rel='noreferrer'>API Repo</a>
+        </div>
+        <div className='content__desc_container'>
+          <p className='content__desc'>{content.desc}</p>
+        </div>
+        <div className='content__stack'>
+          <p className='content__stack_header'>Tech Stack</p>
+          <p><span className='content__stack_list_title'>Front End:</span> {content.stack.client}</p>
+          <p><span className='content__stack_list_title'>Back End:</span> {content.stack.server}</p>
+        </div>
       </div>
     </div>
   )

@@ -48,15 +48,15 @@ export const aboutData = [
       ],
       content: {
         title: 'DiscCaddy',
-        desc: 'Disc Golf app',
+        desc: 'DiscCaddy is built to be your companion on the course. With DiscCaddy you can: keep track of your round by creating a scorecard, add the discs you own to your DiscCaddy bag, and get a recommended disc based on your selected shot type and the discs you own. DiscCaddy helps you think about shot shapes and disc flight characteristics. It also allows you to view all your previous scorecards to track your scores over time.',
         stack: {
           client: 'JavaScript, React, React Router, Context, Jest',
           server: 'Node.js, Express.js, PostgreSQL'
         },
         links: {
-          client: '',
-          server: '',
-          live: ''
+          client: 'https://github.com/jgbowser/DiscCaddy-client',
+          server: 'https://github.com/jgbowser/DiscCaddy-server',
+          live: 'https://disccaddy.vercel.app/'
         }
       }
     },
