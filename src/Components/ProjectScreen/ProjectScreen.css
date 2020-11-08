@@ -1,10 +1,10 @@
 .ProjectScreen {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  display: inline-block;
+  position: absolute;
   margin: 0;
   padding: 0;
   background-color: rgb(46, 46, 46);
+  overflow-y: visible;
 }
 
 .ProjectScreen__image {
@@ -18,7 +18,7 @@
   align-items: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   padding: 0 .5rem;
 }
 
@@ -55,6 +55,12 @@
 .content__title {
   font-size: 1.3rem;
   margin-bottom: 0.75rem;
+}
+
+.content__next {
+  color: white;
+  padding: 15px;
+  font-size: 1.3rem;
 }
 
 .content__links {

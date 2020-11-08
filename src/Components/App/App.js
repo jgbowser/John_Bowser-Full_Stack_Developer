@@ -4,10 +4,10 @@ import About from '../About/About'
 import Projects from '../Projects/Projects'
 import { Element } from 'react-scroll'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faArrowCircleRight, faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons'
+import { faArrowCircleRight, faArrowCircleLeft, faForward } from '@fortawesome/free-solid-svg-icons'
 import './App.css';
 
-library.add( faArrowCircleLeft, faArrowCircleRight )
+library.add( faArrowCircleLeft, faArrowCircleRight, faForward )
 
 function App() {
   return (

@@ -4,7 +4,12 @@ import marathon from '../images/marathon_512.jpg'
 import discCaddy1 from '../images/disc_caddy/disc_caddy_1.jpg'
 import discCaddy2 from '../images/disc_caddy/disc_caddy_2.jpg'
 import discCaddy3 from '../images/disc_caddy/disc_caddy_3.jpg'
-
+import spanish1 from '../images/spanish_srs/sr_1.jpg'
+import spanish2 from '../images/spanish_srs/sr_2.jpg'
+import spanish3 from '../images/spanish_srs/sr_3.jpg'
+import zippal1 from '../images/zip_pal/zip_pal_1.jpg'
+import zippal2 from '../images/zip_pal/zip_pal_2.jpg'
+import zippal3 from '../images/zip_pal/zip_pal_3.jpg'
 
 export const aboutData = [
     {
