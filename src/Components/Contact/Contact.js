@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section id='contact' className='Contact'>
       <h3 className='Contact__header'>Contact</h3>
-      <p>I am actively looking for new opportunities. <br/><br/> If you are looking for a dedicated and hardworking full stack developer with strong technical skills look no further. <br/><br/>My passion and experience will be a valuable assest to your team.</p>
+      <p>I am actively looking for new opportunities. <br/><br/> If you are looking for a dedicated and hardworking full stack developer with strong technical skills, look no further. <br/><br/>My passion and experience will be a valuable asset to your team.</p>
       <p>Feel free to reach out to me via email or LinkedIn and check out my GitHub</p>
       <div className='Contact__info'>
         <a href='http://www.linkedin.com/in/john-g-bowser' target='_blank' rel='noreferrer' className='Contact__link'><FontAwesomeIcon className='Contact__icon' icon={{prefix: 'fab', iconName: 'linkedin'}} /><span className='link_text'>LinkedIn</span></a>

@@ -27,7 +27,7 @@ export const aboutData = [
       content: [
         'I love working with JavaScript, React, Node.js, Express, and PostgreSQL.',
         'I jump at the opportunity to learn new things and improve my skills.',
-        'I think the programming community\'s willingness to share knowledge is invaluable and I strive to exemplify that mindset by sharing my knowledge with others, and learning from others any chance that I get.'
+        'I think the programming community\'s willingness to share knowledge is invaluable; I strive to exemplify that mindset by sharing my knowledge with others and learning from others any chance that I get.'
       ],
       animatedDirection: 'left',
     },
@@ -35,8 +35,8 @@ export const aboutData = [
       img: marathon,
       imgAltText: 'John and his girlfriend Kasie at the Indianapolis Marathon',
       content: [
-        'Outside of programming I have many interests.',
-        'I love spending time with my girlfriend hiking and practicing landscape photography.',
+        'Outside of programming, I have many interests.',
+        'I love spending time hiking with my girlfriend and practicing landscape photography.',
         'I love traveling and seeing new places.',
         'I am an avid reader who never seems to have enough space on my bookshelf for new books.'
       ],
@@ -54,7 +54,7 @@ export const aboutData = [
       ],
       content: {
         title: 'DiscCaddy',
-        desc: 'DiscCaddy is built to be your companion on the course. With DiscCaddy you can: keep track of your round by creating a scorecard, add the discs you own to your DiscCaddy bag, and get a recommended disc based on your selected shot type and the discs you own. DiscCaddy helps you think about shot shapes and disc flight characteristics. It also allows you to view all your previous scorecards to track your scores over time.',
+        desc: 'DiscCaddy is your companion on the course. With DiscCaddy you can: keep track of your round by creating a scorecard, add the discs you own to your DiscCaddy bag, and get a recommended disc based on your selected shot type and the discs you own. DiscCaddy helps you think about shot shapes and disc flight characteristics. It also allows you to view all your previous scorecards to track your scores over time.',
         stack: {
           client: 'JavaScript, React, React Router, Context, Jest',
           server: 'Node.js, Express.js, bcryptjs, PostgreSQL, Mocha, Chai'
@@ -75,7 +75,7 @@ export const aboutData = [
       ],
       content: {
         title: 'Spanish SRS',
-        desc: 'Spanish SRS is a language learning app that utilizes the spaced repetition technique to provide an optimized learning experience for the user. The app uses a linked list on the back end to handle reorganizing the list of words based on correct or incorrect guesses. Users are able to see an overall score as well as correct and incorrect guesses for each word. The back end is designed to scale, making the addition of new words and even languages very simple.',
+        desc: 'Spanish SRS is a language learning app that utilizes the spaced repetition technique to provide an optimized learning experience for the user. The app uses a linked list on the back end to handle reorganizing the list of words based on correct or incorrect guesses. Users can see an overall score as well as  their correct and incorrect guesses for each word. The back end is designed to scale, making the addition of new words and even languages simple.',
         stack: {
           client: 'JavaScript, React, React Router, Context, Cypress',
           server: 'Node.js, Express.js, bcryptjs, PostgreSQL, Mocha, Chai'
@@ -96,7 +96,7 @@ export const aboutData = [
       ],
       content: {
         title: 'Zip Pal',
-        desc: 'Zip Pal is a pen pal app developed to help users escape the isolation of quarantine during the COVID-19 pandemic. The app aims to replicate a real pen pal experience. To do so, there is a 6 hour delay before a message can be read once sent, users take turns sending messages, and users are given random pen pals and can decide to initiate a conversation based on a brief bio. The goal of the constraints is to reduce the pressure of immediate responses and to promote long form, thoughtful messages.',
+        desc: 'Zip Pal is a pen pal app developed to help users escape the isolation of quarantine during the COVID-19 pandemic. The app aims to replicate a real pen pal experience. To accomplish this, there is a 6-hour delay before a sent message can be read, users take turns sending messages, and users are given random pen pals and decide to initiate a conversation based on a brief bio. These constraints reduce the pressure of immediate responses and promote long-form, thoughtful messages.',
         stack: {
           client: 'JavaScript, React, React Router, Context, Jest, Enzyme',
           server: 'Node.js, Express.js, bcryptjs, xss, PostgreSQL, Mocha, Chai'
