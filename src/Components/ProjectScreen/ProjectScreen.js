@@ -34,14 +34,14 @@ const ProjectScreen = ({ images, content, nextProjectHandler }) => {
             onClick={prevImage}
             type='button'
           >
-            <FontAwesomeIcon icon='arrow-circle-left'/>
+            <FontAwesomeIcon className='image_arrow' icon='arrow-circle-left'/>
           </button>
           <button 
             className='ProjectScreen__icon'
             onClick={nextImage}
             type='button'
           >
-            <FontAwesomeIcon icon='arrow-circle-right'/>
+            <FontAwesomeIcon className='image_arrow' icon='arrow-circle-right'/>
           </button>
         </animated.div>
       ))}

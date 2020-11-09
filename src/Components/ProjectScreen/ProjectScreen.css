@@ -85,3 +85,19 @@
 .content__stack_list_title {
   font-weight: 600;
 }
+
+@media all and (min-width: 667px) {
+  .image_arrow {
+    color: white;
+  }
+
+  .ProjectScreen__icon {
+    padding: 0 1rem;
+  }
+}
+
+@media all and (min-width: 100px) {
+  .ProjectScreen__icon {
+    padding: 0 4rem;
+  }
+}
