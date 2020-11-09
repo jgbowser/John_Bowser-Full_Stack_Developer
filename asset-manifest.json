@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f81e4672.chunk.css",
+    "main.js": "/static/js/main.5225ecdf.chunk.js",
+    "main.js.map": "/static/js/main.5225ecdf.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.22acf320.js",
+    "runtime-main.js.map": "/static/js/runtime-main.22acf320.js.map",
+    "static/js/2.0770be34.chunk.js": "/static/js/2.0770be34.chunk.js",
+    "static/js/2.0770be34.chunk.js.map": "/static/js/2.0770be34.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.f81e4672.chunk.css.map": "/static/css/main.f81e4672.chunk.css.map",
+    "static/js/2.0770be34.chunk.js.LICENSE.txt": "/static/js/2.0770be34.chunk.js.LICENSE.txt",
+    "static/media/disc_caddy_1.39f0eaf1.jpg": "/static/media/disc_caddy_1.39f0eaf1.jpg",
+    "static/media/disc_caddy_2.1fc4e724.jpg": "/static/media/disc_caddy_2.1fc4e724.jpg",
+    "static/media/disc_caddy_3.5838c377.jpg": "/static/media/disc_caddy_3.5838c377.jpg",
+    "static/media/marathon_512.82e1642f.jpg": "/static/media/marathon_512.82e1642f.jpg",
+    "static/media/profile_512.80861d46.jpg": "/static/media/profile_512.80861d46.jpg",
+    "static/media/sr_1.062f241a.jpg": "/static/media/sr_1.062f241a.jpg",
+    "static/media/sr_2.75de60f9.jpg": "/static/media/sr_2.75de60f9.jpg",
+    "static/media/sr_3.1cad992f.jpg": "/static/media/sr_3.1cad992f.jpg",
+    "static/media/topshot_512.17ff3513.jpg": "/static/media/topshot_512.17ff3513.jpg",
+    "static/media/zip_pal_1.d1f12cd9.jpg": "/static/media/zip_pal_1.d1f12cd9.jpg",
+    "static/media/zip_pal_2.69119272.jpg": "/static/media/zip_pal_2.69119272.jpg",
+    "static/media/zip_pal_3.09508c01.jpg": "/static/media/zip_pal_3.09508c01.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.22acf320.js",
+    "static/js/2.0770be34.chunk.js",
+    "static/css/main.f81e4672.chunk.css",
+    "static/js/main.5225ecdf.chunk.js"
+  ]
+}
