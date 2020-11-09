@@ -62,7 +62,7 @@ const ProjectScreen = ({ images, content, nextProjectHandler }) => {
           <p><span className='content__stack_list_title'>Front End:</span> {content.stack.client}</p>
           <p><span className='content__stack_list_title'>Back End:</span> {content.stack.server}</p>
         </div>
-        <div className='content__next' onClick={nextProjectHandler}>Next <FontAwesomeIcon icon='forward' /></div>
+        <button type='button' className='content__next' onClick={nextProjectHandler}>Next <FontAwesomeIcon icon='forward' /></button>
       </div>
     </div>
   )

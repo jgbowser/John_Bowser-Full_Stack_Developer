@@ -36,6 +36,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={500}
+              tabIndex='0'
               >
               About
             </Link>
@@ -47,6 +48,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={500}
+              tabIndex='0'
             >
               Projects
             </Link>
@@ -58,6 +60,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={500}
+              tabIndex='0'
             >
               Contact
             </Link>
