@@ -1,0 +1,44 @@
+.Contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  padding: 10vh 2rem 2rem 2rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.Contact__header {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 1rem 5vh 1rem;
+}
+
+.Contact__info {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 75%;
+  max-width: 300px;
+  margin: 0 auto 0 auto;
+}
+
+.Contact__icon {
+  color: white;
+}
+
+.Contact__link {
+  display:flex;
+  justify-content: space-between;
+  text-decoration: none;
+  width: 50%;
+  color: white;
+}
+
+.link_text {
+  display: inline-block;
+}
