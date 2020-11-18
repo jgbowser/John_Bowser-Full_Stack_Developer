@@ -10,9 +10,10 @@
 }
 
 .Header__title {
-  margin-left: 2rem;
+  margin-left: 1.9rem;
   color: black;
   font-size: 2rem;
+  width: 3rem;
 }
 
 .Header__links {
