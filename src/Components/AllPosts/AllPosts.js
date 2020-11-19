@@ -12,6 +12,7 @@ const AllPosts = () => {
         `*[_type == "post"]{
           title,
           slug,
+          publishedAt,
           mainImage{
             asset->{
               _id,
@@ -23,6 +24,8 @@ const AllPosts = () => {
       .then((data) => setAllPosts(data))
       .catch(console.error)
   }, [])
+
+  const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
   return(
     <section className='AllPosts'>
       <h1>Blog Posts</h1>
@@ -35,6 +38,7 @@ const AllPosts = () => {
                 <img src={post.mainImage.asset.url} alt='' />
                 <span>
                   <h2>{post.title}</h2>
+                  <p>{new Date(post.publishedAt).toLocaleDateString(undefined, dateOptions)}</p>
                 </span>
               </span>
             </Link>

@@ -20,6 +20,7 @@ const BlogPost = () => {
         `*[slug.current == $slug]{
           title,
           slug,
+          publishedAt,
           mainImage{
             asset->{
               _id,
@@ -36,6 +37,8 @@ const BlogPost = () => {
       .catch(console.error)
   }, [slug])
 
+  const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+
   if(!postData) return <div>Loading...</div>
 
   return (
@@ -48,6 +51,7 @@ const BlogPost = () => {
             alt='Author is John Bowser'
           />
           <h4>{postData.name}</h4>
+          <p className='BlogPost__published'>Published: {new Date(postData.publishedAt).toLocaleDateString(undefined, dateOptions)}</p>
         </div>
       </div>
       <img src={urlFor(postData.mainImage).width(200).url()} alt='' />
