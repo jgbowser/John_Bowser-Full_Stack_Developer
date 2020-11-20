@@ -28,20 +28,21 @@ const AllPosts = () => {
   const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
   return(
     <section className='AllPosts'>
-      <h1>Blog Posts</h1>
-      <h2>Welcome to my blog</h2>
-      <div>
+      <h2 className='AllPosts__page-header'>Welcome to my blog</h2>
+      <div className='AllPosts__posts-container'>
         {allPostsData &&
           allPostsData.map((post, index) => (
-            <Link to={'/' + post.slug.current} key={post.slug.current}>
-              <span key={index}>
-                <img src={post.mainImage.asset.url} alt='' />
-                <span>
-                  <h2>{post.title}</h2>
-                  <p>{new Date(post.publishedAt).toLocaleDateString(undefined, dateOptions)}</p>
+            <div className='AllPosts__single-post'>
+              <Link className='AllPosts__post-link' to={'/' + post.slug.current} key={post.slug.current}>
+                <span className='AllPosts__post-info' key={index}>
+                  <img className='AllPosts__post-image' src={post.mainImage.asset.url} alt='' />
                 </span>
-              </span>
-            </Link>
+                <span className='AllPosts__post-details'>
+                  <h2 className='AllPosts__post-title'>{post.title}</h2>
+                  <p className='AllPosts__post-pub'>{new Date(post.publishedAt).toLocaleDateString(undefined, dateOptions)}</p>
+                </span>
+              </Link>
+            </div>
           ))}
       </div>
     </section>
