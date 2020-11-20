@@ -32,7 +32,7 @@ const AllPosts = () => {
       <div className='AllPosts__posts-container'>
         {allPostsData &&
           allPostsData.map((post, index) => (
-            <div className='AllPosts__single-post'>
+            <div key={index} className='AllPosts__single-post'>
               <Link className='AllPosts__post-link' to={'/' + post.slug.current} key={post.slug.current}>
                 <span className='AllPosts__post-info' key={index}>
                   <img className='AllPosts__post-image' src={post.mainImage.asset.url} alt='' />
