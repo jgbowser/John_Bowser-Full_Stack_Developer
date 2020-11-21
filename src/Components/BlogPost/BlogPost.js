@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import sanityClient from '../../client'
 import BlockContent from '@sanity/block-content-to-react'
 import imageUrlBuilder from '@sanity/image-url'
+import BlogHeader from '../BlogHeader/BlogHeader'
 import './BlogPost.css'
 
 const builder = imageUrlBuilder(sanityClient)
@@ -43,6 +44,7 @@ const BlogPost = () => {
 
   return (
     <section className='BlogPost'>
+      <BlogHeader />
       <div>
         <h2>{postData.title}</h2>
         <div>
@@ -60,7 +62,7 @@ const BlogPost = () => {
           blocks={postData.body}
           projectId={sanityClient.clientConfig.projectId}
           dataset={sanityClient.clientConfig.dataset}
-        />
+      />
       </div>
     </section>
   )

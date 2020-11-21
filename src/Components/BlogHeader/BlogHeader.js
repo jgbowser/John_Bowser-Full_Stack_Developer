@@ -14,7 +14,7 @@ const BlogHeader = () => {
       <span className='BlogHeader__title'>
         John Bowser's Blog
         <span 
-          className='BlogHeader__burger'
+          className={`BlogHeader__burger ${showNav ? 'show' : ''}`}
           onClick={toggleNav}
         ></span>
       </span>

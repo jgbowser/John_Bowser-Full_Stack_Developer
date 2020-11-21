@@ -20,6 +20,7 @@
   width: 28px;
   height: 3px;
   background: black;
+  transition: transform 1s cubic-bezier(0.39, 1, 0.78, 1.43);
 }
 
 .BlogHeader__burger::before {
@@ -38,6 +39,19 @@
   height: 3px;
   background: black;
   margin: 13px 0 0 0;
+}
+
+.BlogHeader__burger.show {
+  transform: rotate(135deg);
+}
+
+.BlogHeader__burger.show::before {
+  transform: rotate(90deg) translateX(8px);
+  
+}
+
+.BlogHeader__burger.show::after {
+  display: none;
 }
 
 .BlogHeader__nav {
