@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import sanityClient from '../../client'
+import BlogHeader from '../BlogHeader/BlogHeader'
 import './AllPosts.css'
 
 const AllPosts = () => {
@@ -28,7 +29,7 @@ const AllPosts = () => {
   const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
   return(
     <section className='AllPosts'>
-      <h2 className='AllPosts__page-header'>Welcome to my blog</h2>
+      <BlogHeader />
       <div className='AllPosts__posts-container'>
         {allPostsData &&
           allPostsData.map((post, index) => (
