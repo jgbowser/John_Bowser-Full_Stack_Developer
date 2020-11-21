@@ -21,6 +21,7 @@
   height: 3px;
   background: black;
   transition: transform 1s cubic-bezier(0.39, 1, 0.78, 1.43);
+  cursor: pointer;
 }
 
 .BlogHeader__burger::before {

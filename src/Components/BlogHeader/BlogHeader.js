@@ -9,6 +9,12 @@ const BlogHeader = () => {
     setShowNav(!showNav)
   }
 
+  function keyToggle(e) {
+    if(e.key === 'Enter' || e.key ===  ' ') {
+      setShowNav(!showNav)
+    }
+  }
+
   return (
     <div className='BlogHeader'>
       <span className='BlogHeader__title'>
@@ -16,6 +22,8 @@ const BlogHeader = () => {
         <span 
           className={`BlogHeader__burger ${showNav ? 'show' : ''}`}
           onClick={toggleNav}
+          onKeyDown={e => keyToggle(e)}
+          tabIndex='0'
         ></span>
       </span>
       <nav className={`BlogHeader__nav ${showNav ? 'show' : ''}`}>
