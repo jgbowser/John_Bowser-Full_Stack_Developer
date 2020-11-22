@@ -1,6 +1,7 @@
 .BlogPost {
   padding: 1rem;
   line-height: 1.5;
+  max-width: 1000px;
 }
 
 .BlogPost .BlogPost__published {
