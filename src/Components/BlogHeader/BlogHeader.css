@@ -53,7 +53,7 @@
 }
 
 .BlogHeader__burger.show::after {
-  opacity: 0;
+  display: none;
 }
 
 .BlogHeader__nav {
@@ -86,4 +86,37 @@
 
 .BlogHeader__nav-link:hover {
   border-bottom: 2px solid white;
+}
+
+@media all and (min-width: 600px) {
+
+  .BlogHeader {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .BlogHeader__burger,
+  .BlogHeader__burger::before,
+  .BlogHeader__burger::after {
+    display: none;
+  }
+
+  .BlogHeader__nav {
+    display: flex;
+    height: 10vh;
+    width: 40%;
+    background: white;
+  }
+
+  .BlogHeader__nav-list {
+    justify-content: space-between;
+  }
+
+  .BlogHeader__nav-link {
+    color: black;
+  }
+
+  .BlogHeader__nav-link:hover {
+    border-bottom: 2px solid black;
+  }
 }
