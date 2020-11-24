@@ -45,18 +45,25 @@ const BlogPost = () => {
   return (
     <section className='BlogPost'>
       <BlogHeader />
-      <div>
+      <div className='BlogPost__info'>
         <h2>{postData.title}</h2>
-        <div>
+        <div className='BlogPost__pub-info'>
           <img
             src={urlFor(postData.authorImage).width(100).url()}
             alt='Author is John Bowser'
+            className='BlogPost__author-image'
           />
-          <h4>{postData.name}</h4>
-          <p className='BlogPost__published'>Published: {new Date(postData.publishedAt).toLocaleDateString(undefined, dateOptions)}</p>
+          <div className='BlogPost__pub-text'>
+            <h4>{postData.name}</h4>
+            <p className='BlogPost__published'>Published: {new Date(postData.publishedAt).toLocaleDateString(undefined, dateOptions)}</p>
+          </div>
         </div>
       </div>
-      <img src={urlFor(postData.mainImage).width(200).url()} alt='' />
+      <img 
+        src={urlFor(postData.mainImage).width(1000).url()} 
+        alt=''
+        className='BlogPost__main-image'
+      />
       <div>
         <BlockContent
           blocks={postData.body}

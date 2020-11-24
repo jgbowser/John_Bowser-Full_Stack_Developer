@@ -4,9 +4,34 @@
   max-width: 1000px;
 }
 
+.BlogPost__info h2 {
+  text-align: center;
+  margin: 1rem 0 0 0;
+}
+
+.BlogPost__pub-info {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 0 0 .5rem 0;
+  border-bottom: 1px dashed #bbb;
+}
+
+.BlogPost__pub-text {
+  margin-left: .75rem;
+}
+
 .BlogPost .BlogPost__published {
   font-size: 0.75rem;
   margin: 0;
+}
+
+.BlogPost__author-image {
+  border-radius: 50%;
+}
+
+.BlogPost__main-image {
+  width: 100%;
 }
 
 .BlogPost div p {
@@ -15,6 +40,10 @@
 }
 
 .BlogPost div ul {
-  padding-left: 10px;
+  padding-left: 40px;
+}
+
+.BlogPost div ul li {
+  padding: 15px 0;
 }
 
