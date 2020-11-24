@@ -1,5 +1,6 @@
 import { useSpring, animated } from 'react-spring'
 import { Link } from 'react-scroll'
+import { Link as RouterLink } from 'react-router-dom'
 import './Header.css'
 
 const Header = () => {
@@ -64,6 +65,13 @@ const Header = () => {
             >
               Contact
             </Link>
+          </animated.li>
+          <animated.li style={fadeNav}>
+            <RouterLink
+              to='/blog'
+            >
+              Blog
+            </RouterLink>
           </animated.li>
         </ul>
       </nav>
