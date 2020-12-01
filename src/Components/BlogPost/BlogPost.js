@@ -64,7 +64,7 @@ const BlogPost = () => {
         alt=''
         className='BlogPost__main-image'
       />
-      <div>
+      <div className='BlogPost__main-content'>
         <BlockContent
           blocks={postData.body}
           projectId={sanityClient.clientConfig.projectId}
