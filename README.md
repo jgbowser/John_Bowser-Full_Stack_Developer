@@ -1,38 +1,63 @@
-# sv
+# John Bowser's Personal Website
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+My personal website and portfolio built with modern web technologies (that are totally overkill, but I wanted to play around with them.) Visit [johnbowser.dev](https://www.johnbowser.dev) to see it in action.
 
-## Creating a project
+## Technologies
 
-If you're seeing this, you've probably already done this step. Congrats!
+- [SvelteKit](https://kit.svelte.dev/) - Full-stack web framework
+- [Skeleton UI](https://www.skeleton.dev/) - UI design system and component library
+- [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
+- [TailwindCSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [ESLint](https://eslint.org/) - Code linting
+- [Prettier](https://prettier.io/) - Code formatting
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Prerequisites
 
-# create a new project in my-app
-npx sv create my-app
+- Node.js 20.9.0 (use [nvm](https://github.com/nvm-sh/nvm) for version management)
+- npm (comes with Node.js)
+
+## Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/johnbowser/personal_website.git
+   cd personal_website
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run check` - Type-check the project
+- `npm run format` - Format code with Prettier
+- `npm run lint` - Lint code with ESLint
+
+## Project Structure
+
+```
+personal_website/
+├── src/              # Source files
+├── static/           # Static assets
+├── .svelte-kit/      # SvelteKit build output
+└── package.json      # Project configuration
 ```
 
-## Developing
+## License
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+MIT
